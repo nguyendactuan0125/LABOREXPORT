@@ -1,0 +1,84 @@
+﻿@* Login *@
+@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+    <div class="half">
+        <div class="bg order-1 order-md-2" style="background-image: url('../Content/images/nhat-ban-01.jpg'); "></div>
+        <div class="contents order-2 order-md-1">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-block">
+                            <div class="text-center mb-5">
+                                <h3><strong>Quản lý xuất khẩu lao động</strong></h3>
+                            </div>
+                            <form action="#" method="post">
+                                <div class="form-group first">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                                </div>
+                                <div class="form-group last mb-3">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" placeholder="Your Password" id="password">
+                                </div>
+
+                                <div class="d-sm-flex mb-5 align-items-center">
+                                    <label class="control control--checkbox mb-3 mb-sm-0">
+                                        <span class="caption">Remember me</span>
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                                </div>
+
+                                <input type="submit" id="btnLogin" value="Log In" class="btn btn-block btn-primary">
+                                @*<a type="submit" class="btn btn-block btn-primary" href="@Url.Action("LEUR0110", "LEUR01", new { area = "" })" >Log In</a>*@
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/js/popper.min.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+
+    <script>
+        $("#btnLogin").click(function (e) {
+            //window.top.location.href = "@Url.Action("LEUR0110", "LEUR01", new { area = "" })";
+            //window.location.href = '@Url.Content("~")' + "/LEUR01/LEUR0110";
+            window.top.location.href = 'localhost:44335/LEUR01/LEUR0110';
+        });
+
+    </script>
+
+</body>
+</html>
