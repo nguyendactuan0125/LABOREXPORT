@@ -143,6 +143,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Models\Respond\IRespond.cs" />
+=======
+>>>>>>> 28cb8d5c92f7ab534bc5629962f23dc457a59134
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+<<<<<<< HEAD
+=======
     <Folder Include="Models\" />
+>>>>>>> 28cb8d5c92f7ab534bc5629962f23dc457a59134
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>

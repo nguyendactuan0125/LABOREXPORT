@@ -37,9 +37,15 @@ namespace LABOREXPORT_API
             //    context.SetError("invalid_grant", "Provided username and password is incorrect");
             //    return;
             //}
+<<<<<<< HEAD
+            using (Login login = new Login())
+            {
+                var user = login.LoginSystem(context.UserName, context.Password);
+=======
             using (UserDAL userDAL = new UserDAL())
             {
                 var user = userDAL.Login(context.UserName, context.Password);
+>>>>>>> 28cb8d5c92f7ab534bc5629962f23dc457a59134
                 if (user == null)
                 {
                     context.SetError("invalid_grant", "Provided username and password is incorrect");
